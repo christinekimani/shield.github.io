@@ -1,0 +1,50 @@
+body{
+    background-color: grey;
+}
+.navigation{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    color: whitesmoke;
+ 
+}
+.Navlinks{
+    color: whitesmoke;
+}
+.Navlinks > a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 16px;
+}
+.hero{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.heroscontent{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: whitesmoke;
+}
+h1{
+    color: ;
+}
+.heroscontent h1{
+    color: rgb(213, 228, 243);
+    font-size: xx-large;
+}

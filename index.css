@@ -1,0 +1,100 @@
+body{
+    background-color: grey;
+}
+.navigation{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    color: whitesmoke;
+ 
+}
+.Navlinks{
+    color: white;
+}
+.Navlinks > a{
+    color: white;
+    text-decoration: none;
+    margin: 16px;
+}
+.hero{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.heroscontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: whitesmoke;
+}
+h1{
+    color: ;
+}
+.heroscontent h1{
+    color: rgb(213, 228, 243);
+    font-size: xx-large;
+}
+.heroscontent p{
+    color: aliceblue;
+    font-size: x-large;
+}
+.heroscontent button{
+margin: 8px;
+padding: 12px;
+font-size: 10px;
+border: none;
+color: rgb(250, 243, 234);
+background-color: grey;
+}
+.heroscontent button:hover{
+
+}
+.search{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.search > input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 9999px;
+}
+.search > button{
+    padding: 10px;
+    border-radius: 9999px;
+    background-color: gray;
+    color: whitesmoke;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column{
+
+    flex: 25%;
+    max-width: 25% ;
+    padding: 0 4px;
+}
+.column > img{
+    margin-top: 8px;
+    width: 100%;
+    vertical-align: middle;
+}
