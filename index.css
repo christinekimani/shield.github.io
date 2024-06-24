@@ -42,20 +42,20 @@ body{
     color: whitesmoke;
 }
 h1{
-    color: ;
+    color:black ;
 }
 .heroscontent h1{
     color: rgb(213, 228, 243);
-    font-size: xx-large;
+    font-size: 100px;
 }
 .heroscontent p{
     color: aliceblue;
-    font-size: x-large;
+    font-size: 60px;
 }
 .heroscontent button{
 margin: 8px;
 padding: 12px;
-font-size: 10px;
+font-size: 30pxx;
 border: none;
 color: rgb(250, 243, 234);
 background-color: grey;
@@ -97,4 +97,54 @@ background-color: grey;
     margin-top: 8px;
     width: 100%;
     vertical-align: middle;
+}
+.holiday-cards{
+    width: 70%;
+    margin: auto;
+    color: black;
+    margin-top: 50px;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card > img{
+    width: 100%;
+    height: auto;
+}
+.card content{
+    margin: 8px 0;
+    font-size: 18px;    
+}
+.card{
+    background-color: azure;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    width: 30%;
+    color: black;
+}
+.cardcontent{
+    padding: 16px;
+    text-align: center;
+}
+.cardcontent > h2{
+    margin: 0 0 8px;
+}
+.cardcontent > p{
+    margin: 8px;
+    font-size: 18px;
+}
+.cardcontent > button{
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.cardcontent > button: :hover{
+    background-color: white;
 }
