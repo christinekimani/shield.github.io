@@ -1,50 +1,143 @@
-body{
+body {
     background-color: grey;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    width: 100%;
 }
-.navigation{
-    width: 70%;
+
+.navigation {
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem 0;
+
 }
-.logo{
-    color: whitesmoke;
- 
+
+.logo {
+    color: black;
+    margin-left: 1rem;
 }
-.Navlinks{
-    color: whitesmoke;
+
+.Navlinks {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
 }
-.Navlinks > a{
-    color: whitesmoke;
+
+.Navlinks > a {
+    color: black;
     text-decoration: none;
-    margin: 16px;
+    margin: 0 16px;
 }
-.hero{
+
+.Navlinks > button {
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 16px;
+}
+
+.Navlinks > button:hover {
+    background-color: darkgray;
+}
+
+.hero {
     width: 100%;
     height: 88vh;
     overflow: hidden;
     position: relative;
-
 }
-.hero img{
+
+.background-video {
     width: 100%;
     height: 100%;
-    display: block;
+    object-fit: cover;
 }
-.heroscontent{
+
+.heroscontent {
     position: absolute;
     top: 50%;
-    left: 70%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: whitesmoke;
 }
-h1{
-    color: ;
-}
-.heroscontent h1{
+
+.heroscontent h1 {
     color: rgb(213, 228, 243);
     font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.introduction,
+.mission,
+.history,
+.services,
+.team,
+.gallery,
+.sustainability,
+.contact {
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1rem;
+}
+
+.team-member img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gallery img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #ccc;
+    padding-left: 1rem;
+    margin: 1rem 0;
 }
