@@ -1,9 +1,9 @@
 body {
-    background-color: grey;
+    background-color: #878077;
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: black;
     padding: 0;
     width: 100%;
 }
@@ -51,7 +51,7 @@ body {
 
 .hero {
     width: 100%;
-    height: 88vh;
+    height: 40vh;
     overflow: hidden;
     position: relative;
 }
@@ -77,11 +77,37 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-section {
-    padding: 2rem 1rem;
-    max-width: 100%;
-    margin: 0;
-    box-sizing: border-box;
+.mission{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.reject{
+    background-color: #948d83;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.act{
+    background-color: #948d83;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;  
+}
+.act > img{
+    width: 100%;
+    height: auto;
 }
 
 .introduction,
@@ -97,34 +123,12 @@ section {
 
 h1,
 h2 {
-    color: #333;
+    color: black;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.team {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.team-member {
-    text-align: center;
-    margin: 1rem;
-}
-
-.team-member img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.gallery img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 1rem;
-}
 
 footer {
     background: #333;
@@ -140,4 +144,4 @@ blockquote {
     border-left: 5px solid #ccc;
     padding-left: 1rem;
     margin: 1rem 0;
-}
+} */ */
