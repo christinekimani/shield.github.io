@@ -148,3 +148,13 @@ background-color: grey;
 .cardcontent > button: :hover{
     background-color: white;
 }
+footer{
+    width: 70%;
+    color: black;
+    margin: auto;
+    margin-top: 6rem;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
