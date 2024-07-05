@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: rgb(23, 188, 210);
 }
 .navigation{
     width: 70%;
@@ -60,18 +60,18 @@ border: none;
 color: rgb(250, 243, 234);
 background-color: grey;
 }
-.heroscontent button:hover{
+/* .heroscontent button:hover{
 
-}
+} */
 .search{
-    width: 80%;
+    width: 30%;
     margin: auto;
     margin-top: 20px;
     
 }
 
 .search > input{
-    width: 80%;
+    width: 30%;
     padding: 10px;
     border-radius: 9999px;
 }
@@ -145,7 +145,7 @@ background-color: grey;
     background-color: whitesmoke;
     cursor: pointer;
 }
-.cardcontent > button: :hover{
+.cardcontent > button::hover{
     background-color: white;
 }
 footer{

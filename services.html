@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mqkrrllr",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "christinekimani881@gfimail.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Of Kenya</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+   <section class="navigation">
+    <h1 class="logo"><img src="assets/canva.png" alt="" width="80px" height="80px"></images></h1>
+    <div class="Navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <button>Sign Up</button>
+    </div>
+   </section>
+    <header>
+        <h1>Explore the World with Us</h1>
+    </header>
+    
+    <div class="carousel">
+        <div class="carousel-slide">
+            <img src="assets/pink-flamingo-1484781_1280.jpg" alt="Scenic View 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="assets/maasai-mara-7446939_640.jpg" alt="Scenic View 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="assets/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" alt="Scenic View 3">
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"An unforgettable experience. Top-notch service!"</p>
+            <h3>- Alex Johnson</h3>
+        </div>
+        <div class="testimonial">
+            <p>"Best vacation ever. Highly recommended!"</p>
+            <h3>- Maria Gonzalez</h3>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="assets/maasai-mara-7446939_640.jpg" alt="Gallery Image 1">
+            <img src="assets/ahmet-muhsinoglu-U1W4UEjMm48-unsplash.jpg" alt="Gallery Image 2">
+            <img src="assets/denys-nevozhai-guNIjIuUcgY-unsplash.jpg" alt="Gallery Image 3">
+            <img src="assets/ahmed-galal-LaLJXbAloZE-unsplash.jpg" alt="Gallery Image 1">
+            <img src="assets/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Gallery Image 2">
+            <img src="assets/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <section class="footer-section">
+
+        <div class="footer-1">
+          <h1>logo</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <span></span>
+        </div>
+
+        <div class="footer-1">
+          <p>Home</p>
+          <p>About</p>
+          <p>Services</p>
+        </div>
+
+        <div class="footer-1">
+          <p>Contact</p>
+          <p>Connect</p>
+          <p>Starter Pack</p>
+        </div>
+      </section>
+
+      <section>
+        <h1>All Rights Reserved</h1>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
