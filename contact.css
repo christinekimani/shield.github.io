@@ -1,8 +1,31 @@
+body{
+    background-color: #dcaa68;
+}
 .contact-page {
     width: 80%;
     margin: auto;
     padding: 2rem;
-    background-color: #ccc;
+
+}
+.navigation{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    color: whitesmoke;
+ 
+}
+.Navlinks{
+    color: white;
+}
+.Navlinks > a{
+    color: white;
+    text-decoration: none;
+    margin: 16px;
 }
 
 
@@ -23,7 +46,7 @@
 }
 
 .contact-form input, .contact-form textarea {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -48,4 +71,14 @@
 
 .contact-info p {
     margin-bottom: 0.5rem;
+}
+footer{
+    width: 70%;
+    color: black;
+    margin: auto;
+    margin-top: 6rem;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
 }

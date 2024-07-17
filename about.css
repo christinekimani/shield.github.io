@@ -8,45 +8,25 @@ body {
     width: 100%;
 }
 
-.navigation {
-    width: 80%;
+.navigation{
+    width: 70%;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-
+    flex-direction: row;
+    justify-content: space-around;
 }
-
-.logo {
-    color: black;
-    margin-left: 1rem;
+.logo{
+    color: whitesmoke;
+ 
 }
-
-.Navlinks {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
+.Navlinks{
+    color: white;
 }
-
-.Navlinks > a {
-    color: black;
+.Navlinks > a{
+    color: white;
     text-decoration: none;
-    margin: 0 16px;
-}
-
-.Navlinks > button {
-    background-color: whitesmoke;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 16px;
-}
-
-.Navlinks > button:hover {
-    background-color: darkgray;
+    margin: 16px;
 }
 
 .hero {
