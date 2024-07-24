@@ -1,5 +1,5 @@
 body{
-    background-color: #ae7f4d;
+    background-color: #dcaa75;
 }
 .navigation{
     width: 70%;
@@ -146,7 +146,7 @@ background-color: grey;
     cursor: pointer;
 }
 .cardcontent > button::hover{
-    background-color: white;
+    background-color: rgb(17, 124, 182);
 }
 footer{
     width: 70%;

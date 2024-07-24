@@ -1,5 +1,5 @@
 body {
-    background-color: #878077;
+    background: linear-gradient(454deg, #666859, #827f74);
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -65,7 +65,7 @@ body {
     margin-top: 2rem;
 }
 .reject{
-    background-color: #948d83;
+    background-color:  #333027; 
     width: 25%;
     padding: 15px;
     border-radius: 15px;
@@ -79,8 +79,8 @@ body {
     margin-top: 2rem;
 }
 .act{
-    background-color: #948d83;
-    width: 25%;
+background-color:  #272315; 
+   width: 25%;
     padding: 15px;
     border-radius: 15px;
     text-align: center;  
@@ -104,7 +104,7 @@ h2 {
 
 
 footer {
-    background: #333;
+    background: linear-gradient(454deg, #737b3d, #42391c);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -118,3 +118,9 @@ blockquote {
     padding-left: 1rem;
     margin: 1rem 0;
 } 
+
+@media screen ( max-width:768px) {
+    .reject{
+        width: 200px !important;
+    }
+}

@@ -1,0 +1,127 @@
+.places {
+    padding: 2em;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.place-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #53cae0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1em;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: #;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #005959;
+}
+
+
+/* Booking page styles */
+.booking-page {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.booking-page h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.booking-page p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking-form button {
+    align-self: flex-start;
+}
+
+.back-btn {
+    background-color: #ccc;
+    color: #333;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.back-btn:hover {
+    background-color: #aaa;
+}
