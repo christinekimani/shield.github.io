@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </select>
               <label for="additional">Additional Requests:</label>
               <textarea id="additional" name="additional"></textarea>
-              <button type="submit" class="btn">Confirm Booking</button>
+              <button type="submit" class="intaSendPayButton">Confirm Booking</button>
           </form>
           <button class="btn back-btn">Back</button>
       `;
@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".back-btn").addEventListener("click", () => {
       location.reload(); // Reload the page to go back to the main list
     });
-  }
+  
   document
   .querySelector(".booking-form")
   .addEventListener("submit", handleBookingFormSubmit);
-
+  }
 
 function handleBookingFormSubmit(event) {
 event.preventDefault();
@@ -102,7 +102,9 @@ function savebookingtofirebase(bookingdetails){
   .catch((error)=>{
     console.error("error saving booking:", error);
     //optionally,show an error message to the user
-  })
+  });
+
+  
 }
 
 // Update the button attributes
@@ -111,4 +113,11 @@ paymentButton.dataset.currency = "KES";
 
 // Simulate button click
 paymentButton.click();
+}
+
+function calculateBookingAmount(bookingDetails){
+  const price_per_night = 5500;
+  const meal_price = 1500;
+  return(meal_price + price_per_night)*bookingDetails.days *bookingDetails.visitors;
+  
 }

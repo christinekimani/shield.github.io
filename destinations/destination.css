@@ -40,7 +40,7 @@
     margin: 1em;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.2s; 
 }
 
 .card:hover {
@@ -51,7 +51,7 @@
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
+} 
 
 .card-content {
     padding: 1em;
@@ -144,6 +144,6 @@
 .back-btn:hover {
     background-color: #0c0c0c;
 }
-.booking-form{
+/* .booking-form{
     
-}
+} */
