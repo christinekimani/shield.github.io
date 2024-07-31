@@ -89,6 +89,21 @@ intasend.on("FAILED", (results) => {
 intasend.on("IN-PROGRESS", (results) => {
   console.log("Payment in progress", results);
 });
+function savebookingtofirebase(bookingdetails){
+  const userId = ""; // replace with actual user ID if available
+  const dbREF = ref(database,"booking/"+ userId);
+  set(dbREF,{
+    ...bookingdetails,
+  })
+  .then(()=>{
+    console.log("booking saved successfully");
+    //optionally, show a success message to the user
+  })
+  .catch((error)=>{
+    console.error("error saving booking:", error);
+    //optionally,show an error message to the user
+  })
+}
 
 // Update the button attributes
 paymentButton.dataset.amount = calculateBookingAmount(bookingDetails); // Replace with actual amount based on bookingDetails
@@ -96,7 +111,4 @@ paymentButton.dataset.currency = "KES";
 
 // Simulate button click
 paymentButton.click();
-}
-function calculateBookingAmount(bookingDetails){
-
 }
