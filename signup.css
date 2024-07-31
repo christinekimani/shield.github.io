@@ -5,6 +5,9 @@
     color: #01a2a8;
     letter-spacing: 0.1em;
   }
+  body{
+    background-color: #837d76;
+}
   
   .p {
     margin-top: 5%;
@@ -71,3 +74,33 @@
     border: none;
     margin-top: 3%;
   }
+  .navigation{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    color: whitesmoke;
+ 
+}
+.Navlinks{
+    color: white;
+}
+.Navlinks > a{
+    color: rgb(33, 30, 30);
+    text-decoration: none;
+    margin: 16px;
+}
+footer{
+  width: 70%;
+  color: black;
+  margin: auto;
+  margin-top: 6rem;
+}
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+}
