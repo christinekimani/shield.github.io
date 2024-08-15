@@ -42,83 +42,83 @@ function openBookingPage(placeName, placeDescription) {
     location.reload(); // Reload the page to go back to the main list
   });
 
-document
-.querySelector(".booking-form")
-.addEventListener("submit", handleBookingFormSubmit);
+  document
+    .querySelector(".booking-form")
+    .addEventListener("submit", handleBookingFormSubmit);
 }
 
 function handleBookingFormSubmit(event) {
-event.preventDefault();
-const form = event.target;
-const formData = new FormData(form);
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
 
-const bookingDetails = {
-visitors: formData.get("visitors"),
-days: formData.get("days"),
-meals: formData.get("meals"),
-additional: formData.get("additional"),
-};
+  const bookingDetails = {
+    visitors: formData.get("visitors"),
+    days: formData.get("days"),
+    meals: formData.get("meals"),
+    additional: formData.get("additional"),
+  };
 
-// Proceed to IntaSend Payment
-triggerIntaSendPayment(bookingDetails);
+  // Proceed to IntaSend Payment
+  triggerIntaSendPayment(bookingDetails);
 }
 
 function triggerIntaSendPayment(bookingDetails) {
-const paymentButton = document.querySelector(".intaSendPayButton");
+  const paymentButton = document.querySelector(".intaSendPayButton");
 
-if (!paymentButton) {
-console.error("IntaSend payment button not found");
-return;
+  if (!paymentButton) {
+    console.error("IntaSend payment button not found");
+    return;
+  }
+
+  // Initialize IntaSend
+  const intasend = new window.IntaSend({
+    publicAPIKey: "ISPubKey_test_ee5f4860-80fb-4670-a8ef-3258658af886",
+    live: false, // set to true when going live
+  });
+
+  // Attach event listeners
+  intasend.on("COMPLETE", (results) => {
+    console.log("Payment successful", results);
+    // Handle successful payment (e.g., save booking details to your database)
+  });
+  intasend.on("FAILED", (results) => {
+    console.log("Payment failed", results);
+    // Handle payment failure
+  });
+  intasend.on("IN-PROGRESS", (results) => {
+    console.log("Payment in progress", results);
+  });
+  function savebookingtofirebase(bookingdetails) {
+    const userId = ""; // replace with actual user ID if available
+    const dbREF = ref(database, "booking/" + userId);
+    set(dbREF, {
+      ...bookingdetails,
+    })
+      .then(() => {
+        console.log("booking saved successfully");
+        //optionally, show a success message to the user
+      })
+      .catch((error) => {
+        console.error("error saving booking:", error);
+        //optionally,show an error message to the user
+      });
+
+
+  }
+
+  // Update the button attributes
+  paymentButton.dataset.amount = calculateBookingAmount(bookingDetails); // Replace with actual amount based on bookingDetails
+  paymentButton.dataset.currency = "KES";
+
+  // Simulate button click
+  paymentButton.click();
 }
 
-// Initialize IntaSend
-const intasend = new window.IntaSend({
-publicAPIKey: "ISPubKey_test_ee5f4860-80fb-4670-a8ef-3258658af886",
-live: false, // set to true when going live
-});
-
-// Attach event listeners
-intasend.on("COMPLETE", (results) => {
-console.log("Payment successful", results);
-// Handle successful payment (e.g., save booking details to your database)
-});
-intasend.on("FAILED", (results) => {
-console.log("Payment failed", results);
-// Handle payment failure
-});
-intasend.on("IN-PROGRESS", (results) => {
-console.log("Payment in progress", results);
-});
-function savebookingtofirebase(bookingdetails){
-const userId = ""; // replace with actual user ID if available
-const dbREF = ref(database,"booking/"+ userId);
-set(dbREF,{
-  ...bookingdetails,
-})
-.then(()=>{
-  console.log("booking saved successfully");
-  //optionally, show a success message to the user
-})
-.catch((error)=>{
-  console.error("error saving booking:", error);
-  //optionally,show an error message to the user
-});
-
-
-}
-
-// Update the button attributes
-paymentButton.dataset.amount = calculateBookingAmount(bookingDetails); // Replace with actual amount based on bookingDetails
-paymentButton.dataset.currency = "KES";
-
-// Simulate button click
-paymentButton.click();
-}
-
-function calculateBookingAmount(bookingDetails){
-const price_per_night = 5500;
-const meal_price = 1500;
-return(meal_price + price_per_night)*bookingDetails.days *bookingDetails.visitors;
+function calculateBookingAmount(bookingDetails) {
+  const price_per_night = 5500;
+  const meal_price = 1500;
+  return (meal_price + price_per_night) * bookingDetails.days * bookingDetails.visitors;
 
 }
 
