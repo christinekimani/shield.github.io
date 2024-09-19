@@ -13,7 +13,10 @@
   },
   "main": "index.js",
   "dependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.4.5",
+=======
+>>>>>>> bd5e6d6511f03a1e653e05f02353f49e8cf009c8
     "firebase-admin": "^12.1.0",
     "firebase-functions": "^5.0.0"
   },

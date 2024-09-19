@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const nodemailler = require("nodemailler");
@@ -35,4 +36,6 @@ exports.sendEmailToUsers =functions.firestore
     }
 });
 
+=======
+>>>>>>> bd5e6d6511f03a1e653e05f02353f49e8cf009c8
 
