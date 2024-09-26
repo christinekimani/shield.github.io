@@ -98,7 +98,7 @@ background-color: grey;
     width: 100%;
     vertical-align: middle;
 }
-.holiday-cards{
+/* .holiday-cards{
     width: 70%;
     margin: auto;
     color: black;
@@ -146,8 +146,8 @@ background-color: grey;
     cursor: pointer;
 }
 .cardcontent > button::hover{
-    background-color: rgb(17, 124, 182);
-}
+    background-color: rgb(17, 124, 182); */
+/* } */
 footer{
     width: 70%;
     color: black;
