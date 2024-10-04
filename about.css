@@ -119,8 +119,8 @@ blockquote {
     margin: 1rem 0;
 } 
 
-@media screen ( max-width:768px) {
-    .reject{
+@media screen and (max-width: 768px) {
+    .reject {
         width: 200px !important;
     }
 }
