@@ -65,7 +65,7 @@ body {
     margin-top: 2rem;
 }
 .reject{
-    background-color:  #333027; 
+    background: linear-gradient(454deg, #666859, #827f74);; 
     width: 25%;
     padding: 15px;
     border-radius: 15px;
@@ -79,7 +79,7 @@ body {
     margin-top: 2rem;
 }
 .act{
-background-color:  #272315; 
+    background: linear-gradient(454deg, #666859, #827f74);; 
    width: 25%;
     padding: 15px;
     border-radius: 15px;
