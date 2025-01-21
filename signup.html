@@ -3,10 +3,11 @@
 
 <head>
     <title>Login / Register</title>
-    <link rel="stylesheet" href="signup.css">
     
     <link rel="stylesheet" href="footer.css">
     <script type="module" src="./signup.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -26,55 +27,167 @@
             <a href="destinations/destination.html">Destinations</a>
 
         </div>
-    </section>
-    <div class="login-container">
-        <div id="main">
-            <h1>Sign In</h1>
-            <input id="email" type="text" placeholder="Email" />
-            <input id="password" type="password" placeholder="Password" />
-            <button id="submit">Login</button>
-            <p class="p"><span>or</span></p>
-            <button id="sign-up">Sign Up</button>
+        <style>
+            #main > h1 {
+                    margin-bottom: 8%;
+                    text-align: center;
+                    font-family: "Fredoka One", cursive;
+                    color: #01a2a8;
+                    letter-spacing: 0.1em;
+                }
+            body {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+                background-color: #c6b299;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .navigation{
+                    width: 70%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            .logo{
+                    color: whitesmoke;
+                
+                }
+            .Navlinks{
+                    color: white;
+                }
+            .Navlinks > a{
+                    color: rgb(33, 30, 30);
+                    text-decoration: none;
+                    margin: 16px;
+                }
+                    
+            .container {
+                display: flex;
+                width: 80%;
+                height: 90%;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                overflow: hidden;
+            }
+    
+            .left {
+                flex: 1;
+                background: url('your-pattern-image.jpg') no-repeat center center/cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+    
+            .logo-wrapper {
+                background-color: #fdf1d2;
+                width: 60%;
+                height: 60%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .logo-wrapper img {
+                width: 80%;
+                border-radius: 50%;
+            }
+    
+            .logo-wrapper h1 {
+                margin-top: 15px;
+                font-size: 20px;
+                color: #663300;
+                font-weight: 600;
+            }
+    
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px;
+                background-color: #fdf6ee;
+            }
+    
+            .right h2 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #663300;
+            }
+    
+            .form {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .form input, .form select {
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    
+            .form button {
+                padding: 12px;
+                font-size: 16px;
+                background-color: #8b0000;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .form button:hover {
+                background-color: #a52a2a;
+            }
+    
+            .form a {
+                margin-top: 10px;
+                text-align: center;
+                color: #663300;
+                text-decoration: none;
+            }
+    
+            .form a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="logo-wrapper">
+                    <img src="Brown Simple Giraffe .png" alt="Logo">
+                    <h1>Crown Of Kenya</h1>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Sign Up</h2>
+                <form class="form">
+                    <input type="text" placeholder="Expo Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <select>
+                        <option value="">User Type</option>
+                        <option value="exhibitor">Exhibitor</option>
+                        <option value="visitor">Visitor</option>
+                    </select>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Sign Up</button>
+                    <a href="#">Already a Member? Sign in Now</a>
+                </form>
+            </div>
         </div>
-
-        <div id="create-acct">
-            <h1>Create an Account</h1>
-            <input id="email-signup" type="text" placeholder="Email *" />
-            <input id="confirm-email-signup" type="email" placeholder="Confirm Email *" />
-            <input id="password-signup" type="password" placeholder="Password *" />
-            <input id="confirm-password-signup" type="password" placeholder="Confirm Password *" />
-            <button id="create-acct-btn">Create Account</button>
-            <button id="return-btn">Return to Login</button>
-        </div>
-    </div>
-
-
-    <footer>
-        <hr>
-        <section class="footer-section">
-            <div class="footer-1">
-                <h1>SHIELDINTL</h1>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <span></span>
-            </div>
-
-            <div class="footer-1">
-                <p>Home</p>
-                <p>About</p>
-                <p>Services</p>
-            </div>
-            <div class="footer-1">
-                <p>Contact</p>
-                <p>Connect</p>
-                <p>Starter Pack</p>
-            </div>
-        </section>
-
-        <section>
-            <h1>All Rights Reserved</h1>
-        </section>
-    </footer>
-
+   
 </body>
 
 </html>
